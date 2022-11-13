@@ -13,62 +13,37 @@
 </head>
 
 <body>
+    <!-- cursor -->
+    <span class="cursor-ball"></span>
+    <span class="cursor cursor-1"></span>
+    <span class="cursor-others cursor-2"></span>
+    <span class="cursor-others cursor-3"></span>
+    <span class="cursor-others cursor-4"></span>
     <!-- Header -->
     <header class="header">
         <h2 class="header__title">Proyectos Figma</h2>
     </header>
     <!-- main -->
     <main class="main">
-        <section class="projects-container">
-            <article class="projects__item">
-                <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                    alt="" class="projects__img">
-            </article>
-            <article class="projects__item">
-                <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                    alt="" class="projects__img">
-            </article>
-            <article class="projects__item">
-                <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                    alt="" class="projects__img">
-            </article>
-            <article class="projects__item">
-                <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                    alt="" class="projects__img">
-            </article>
-            <article class="projects__item">
-                <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                    alt="" class="projects__img">
-            </article>
-            <article class="projects__item">
-                <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                    alt="" class="projects__img">
-            </article>
-            <article class="projects__item">
-                <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                    alt="" class="projects__img">
-            </article>
-            <article class="projects__item">
-                <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                    alt="" class="projects__img">
-            </article>
-            <article class="projects__item">
-                <img src="" alt="" class="modal__img">
-                <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                    alt="" class="projects__img">
-            </article>
+        <section class="projects-container" id="projects-container">
+
         </section>
     </main>
     <!-- navigarion -->
     <nav class="navigation">
         <ul class="navigation__ul">
             <li class="navigation__li">
-                <a href="#" class="navigation__a">
+                <a href="#" class="navigation__a" title="Inicio">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+            <li class="navigation__li">
+                <a href="#" class="navigation__a" title="Diseños">
                     <i class="fa-brands fa-figma"></i>
                 </a>
             </li>
             <li class="navigation__li">
-                <a href="#" class="navigation__a">
+                <a href="#" class="navigation__a" title="Componentes">
                     <i class="fa-solid fa-table-cells-large"></i>
                 </a>
             </li>
@@ -80,15 +55,29 @@
             <i class="fa-solid fa-xmark"></i>
         </aside>
 
-        <input type="range" name="" id="modal-range" min="0" max="10" value="7" class="modal__range">
+        <div class="modal-range">
+            <span class="modal__range-number" id="modal-number">50%</span>
+            <input type="range" name="" id="modal-range" min="4" max="10" value="5" class="modal__range">
+        </div>
 
         <article class="modal-container">
-            <img src="https://raw.githubusercontent.com/ChapST1/EasyBankLandigChallengeHubPageHubFrontendMentor/master/design/desktop-preview.jpg"
-                alt="" class="modal__img" id="modal-img">
+            <img src="" alt="" class="modal__img" id="modal-img">
+
+            <aside class="modal__loader loader" id="modal-loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </aside>
         </article>
     </section>
 
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
