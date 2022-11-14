@@ -10,8 +10,8 @@ const cursor3 = document.querySelector('.cursor-3')
 const cursor4 = document.querySelector('.cursor-4');
 
 window.addEventListener('mousemove', (e) => {
-    let x = e.pageX;
-    let y = e.pageY;
+    let x = e.screenX;
+    let y = e.screenY;
 
     cursorBall.style.left = `${x}px`;
     cursorBall.style.top = `${y}px`;
