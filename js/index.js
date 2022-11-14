@@ -1,22 +1,32 @@
-const modal = document.getElementById('modal');
-const modalImage = document.getElementById('modal-img');
-const closeModal = document.getElementById('close-modal');
-const modalRange = document.getElementById('modal-range');
-let value;
+import { showData } from "./data.js";
+const projectsContainer = document.getElementById('projects-container');
+showData(projectsContainer);
 
-const allImages = document.querySelectorAll('.projects__img');
+//cursor
+const cursorBall = document.querySelector('.cursor-ball')
+const cursor = document.querySelector('.cursor');
+const cursor2 = document.querySelector('.cursor-2')
+const cursor3 = document.querySelector('.cursor-3')
+const cursor4 = document.querySelector('.cursor-4');
 
-allImages.forEach(e => {
-    e.addEventListener('click', () => {
-        modal.classList.add('modal-active');
-        closeModal.addEventListener('click', () => {
-            modal.classList.remove('modal-active');
+window.addEventListener('mousemove', (e) => {
+    let x = e.screenX;
+    let y = e.screenY;
 
-        })
-    })
-})
+    cursorBall.style.left = `${x}px`;
+    cursorBall.style.top = `${y}px`;
 
-modalRange.addEventListener('change', (e) => {
-    value = e.target.value;
-    modalImage.style.width = `${value}0%`;
+    cursor.style.left = `${x}px`;
+    cursor.style.top = `${y}px`;
+
+    cursor2.style.left = `${x}px`;
+    cursor2.style.top = `${y}px`;
+
+    cursor3.style.left = `${x}px`;
+    cursor3.style.top = `${y}px`;
+
+    cursor4.style.left = `${x}px`;
+    cursor4.style.top = `${y}px`;
+
+
 })
