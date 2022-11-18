@@ -30,13 +30,12 @@
 }
 
 html {
-    cursor: none;
+    /* cursor: none; */
 }
 
 body {
     background-color: var(--bg);
     overflow-x: hidden;
-    padding-bottom: 120px;
 }
 
 /* cursor */
