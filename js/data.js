@@ -52,7 +52,7 @@ export async function showData(element) {
             })
         })
     })
-    modalRange.addEventListener('change', (e) => {
+    modalRange.addEventListener('input', (e) => {
         value = e.target.value;
         modalNumber.textContent = `${value}0%`;
         modalImage.style.width = `${value}0%`;
